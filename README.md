@@ -1,7 +1,7 @@
-- 👋 Hi, I’m @s9ori
-- 👀 I’m interested in k-pop, human rights, and fashion!
-- 🌱 I’m currently learning to build react apps.
-- 💞️ I’m looking to collaborate on ml.
+- 👋 Hi, I’m Saori Uchida.
+- 👀 I’m interested in k-pop, sustainable development, and fashion!
+- 🌱 I’m currently learning to build machine learning algorithms.
+- 💞️ I’m looking to collaborate on policy analysis applications.
 - 📫 How to reach me: git message.
 
 <!---
