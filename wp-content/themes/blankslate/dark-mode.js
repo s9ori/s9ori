@@ -37,13 +37,18 @@ toggleButton.addEventListener('click', () => {
   }
 
   const form = document.querySelector('.openai');
+  const texts = document.querySelector('.texted');
 
   if (document.body.classList.contains('light')) {
     form.classList.remove('dark');
     form.classList.add('light');
+    texts.classList.remove('dark');
+    texts.classList.add('light');
   } else {
     form.classList.remove('light');
     form.classList.add('dark');
+    texts.classList.remove('light');
+    texts.classList.add('dark');
   }
  
   const label = document.querySelector('.openai-prompt');

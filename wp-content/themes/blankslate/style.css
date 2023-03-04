@@ -370,7 +370,7 @@ textarea::-webkit-input-placeholder {
 .spinner-container {
 transition: all 1s ease-in-out;
 }
-/*
+
 .openai.light {
     background-color: #f1f1f1 !important;
     color: #121212 !important;
@@ -380,6 +380,15 @@ transition: all 1s ease-in-out;
     background-color: #121212 !important;
     color: #f1f1f1 !important;
   }
+
+  .texted.light {
+    background-color: #ffffff8f !important;
+  }
+  
+  .texted.dark {
+    background-color: #0000008a !important;
+  }
+  
 
   .openai-response.light {
     color: #121212 !important;
@@ -415,7 +424,6 @@ transition: all 1s ease-in-out;
     color: #121212 !important;
     background-color: #f1f1f1 !important;
   }
-  */
 
 form:hover {
     transition: all 0.5s ease-in-out;
