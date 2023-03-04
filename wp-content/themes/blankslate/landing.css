@@ -17,9 +17,10 @@
     row-gap: 20px;
     display: flex;
     flex-direction: column;
+    z-index: 99;
     border-radius: 25px;
     padding: 50px;
-    background-color: #0000008a !important;
+    background-color: #ffffff8f !important;
 }
 
 .quick {
