@@ -7,7 +7,6 @@ get_header();
 ?>
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 <div class="entry-basics">
-<h1 class="entry-title" itemprop="name"><?php the_title(); ?></h1> <?php edit_post_link(); ?>
 </div>
 <style>
   #content {
