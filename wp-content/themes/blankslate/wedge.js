@@ -1,11 +1,11 @@
 setTimeout(function(){
-const colors = ["#00E5FF", "#FC8B00", "#FF00B6", "#0BD10B", "#FFEF00"];
+const colors = ["#d4acff", "#7ab8ff", "#ffffff"];
 
 let numwedges;
 if (window.innerWidth > 550) {
-    numwedges = 57;
-} else {
     numwedges = 20;
+} else {
+    numwedges = 5;
 }
 const wedges = [];
 
@@ -16,8 +16,9 @@ for (let i = 0; i < numwedges; i++) {
   wedge.style.left = `${Math.min(85, Math.floor(Math.random() * 100))}vw`;
   wedge.style.top = `${Math.min(85, Math.floor(Math.random() * 100))}vh`;
   wedge.style.transform = `scale(${Math.random()})`;
-  wedge.style.width = `${Math.random()}em`;
+  wedge.style.width = `${Math.min(6, Math.floor(Math.random() * 12))}em`;
   wedge.style.height = wedge.style.width;
+  wedge.style.boxShadow = `0px 0px 50px 50px` + wedge.style.background;
   wedge.style.opacity = 0;
   
   wedges.push(wedge);

@@ -17,6 +17,9 @@
     row-gap: 20px;
     display: flex;
     flex-direction: column;
+    border-radius: 25px;
+    padding: 50px;
+    background: #38383859;
 }
 
 .quick {
@@ -70,12 +73,11 @@
 
 h1.landing-text {
     font-family: 'Yantramanav', sans-serif;
-    font-weight: 700;
+    font-weight: 500;
     font-size: 3.5em;
     line-height: 120%;
     letter-spacing: -0.022em;
-    text-transform: uppercase;
-    background: linear-gradient(180deg, #FF007A 0%, #F3AF00 100%);
+    background: linear-gradient(180deg, #d4acff 0%, #7ab8ff 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     flex: 1;
@@ -268,6 +270,7 @@ h1.landing-text {
     border-radius: 100%;
     opacity: 0;
     z-index: 0;
+    box-shadow: 0px 0px 50px 50px #ffffff;
     transition: all 1.5s ease-in-out;
   }
 
