@@ -2,14 +2,20 @@
 const currentTheme = localStorage.getItem('theme');
 if (currentTheme === 'dark') {
   document.body.classList.add('dark');
+  texts.classList.remove('dark');
+  form.classList.add('dark');
   localStorage.setItem('theme', 'dark');
 } else if(currentTheme === 'light') {
   document.body.classList.add('light');
   localStorage.setItem('theme', 'light');
+  form.classList.add('light');
+  texts.classList.add('light');
 } else {
   // Set a default theme
   document.body.classList.add('light');
   localStorage.setItem('theme', 'light');
+  form.classList.add('light');
+  texts.classList.add('light');
 }
 
 const toggleButton = document.getElementById('theme-toggle');
