@@ -371,21 +371,19 @@ transition: all 1s ease-in-out;
 }
 
 .openai.light {
-    background-color: #f1f1f1 !important;
-    color: #121212 !important;
+    background-color: #0000008a !important;
   }
   
   .openai.dark {
-    background-color: #121212 !important;
-    color: #f1f1f1 !important;
+    background-color: #ffffff8f !important;
   }
 
   .texted.light {
-    background-color: #ffffff8f !important;
+    background-color: #0000008a !important;
   }
   
   .texted.dark {
-    background-color: #0000008a !important;
+    background-color: #ffffff8f !important;
   }
   
 
