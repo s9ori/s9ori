@@ -19,7 +19,7 @@
     flex-direction: column;
     border-radius: 25px;
     padding: 50px;
-    background: #38383859;
+    background-color: #0000008a !important;
 }
 
 .quick {
@@ -99,7 +99,7 @@ h1.landing-text {
     min-width: 600px;
     min-height: 600px;
     background: #D9D9D9;
-    border-radius: 50%;
+    border-radius: 25px;
     flex: 1;
     margin-top: 50px;
     overflow: hidden;
@@ -110,9 +110,6 @@ h1.landing-text {
 }
 
 .landing-frame {
-    border: double 3px transparent;
-    border-radius: 50%;
-    background-image: linear-gradient(#ffffff00, #ffffff00), linear-gradient(180deg, #FF007A 0%, #F3AF00 100%);
     background-origin: border-box;
     background-clip: content-box, border-box;
     display: inline-block;

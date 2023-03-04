@@ -363,7 +363,6 @@ textarea::-webkit-input-placeholder {
 
 .openai {
     position: absolute !important;
-    background: linear-gradient(180deg, #e4006dad 0%, #e6a600ba 100%);
     transition: all 1s ease-in-out;
 }
 
