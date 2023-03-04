@@ -16,9 +16,10 @@ for (let i = 0; i < numwedges; i++) {
   wedge.style.left = `${Math.min(85, Math.floor(Math.random() * 100))}vw`;
   wedge.style.top = `${Math.min(85, Math.floor(Math.random() * 100))}vh`;
   wedge.style.transform = `scale(${Math.random()})`;
-  wedge.style.width = `${Math.min(6, Math.floor(Math.random() * 12))}em`;
+  wedge.style.width = `${Math.min(15, Math.floor(Math.random() * 30))}em`;
   wedge.style.height = wedge.style.width;
-  wedge.style.boxShadow = `0px 0px 50px 50px` + wedge.style.background;
+  let backgroundColor = wedge.style.background;
+  wedge.style.boxShadow = `0px 0px 50px 50px ${backgroundColor}`;
   wedge.style.opacity = 0;
   
   wedges.push(wedge);
