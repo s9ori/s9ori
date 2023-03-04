@@ -1,0 +1,214 @@
+{
+    "packages": [
+        {
+            "name": "wpsec/wp-2fa-plugin",
+            "version": "v1.0.1",
+            "version_normalized": "1.0.1.0",
+            "source": {
+                "type": "git",
+                "url": "git@github.com:gdcorp-wordpress/wpsec-wp-2fa-plugin.git",
+                "reference": "71365583c69f73ae5c4057e2545a71ce055717aa"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/gdcorp-wordpress/wpsec-wp-2fa-plugin/zipball/71365583c69f73ae5c4057e2545a71ce055717aa",
+                "reference": "71365583c69f73ae5c4057e2545a71ce055717aa",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*",
+                "ext-zlib": "*"
+            },
+            "require-dev": {
+                "10up/wp_mock": "0.4.2",
+                "dealerdirect/phpcodesniffer-composer-installer": "^0.7.1",
+                "phpunit/phpunit": "^9.5",
+                "squizlabs/php_codesniffer": "3.*",
+                "wp-coding-standards/wpcs": "^2.3.0",
+                "wpsec/wp-mock-test-abstraction": "dev-main"
+            },
+            "time": "2022-11-23T14:19:09+00:00",
+            "type": "wordpress-plugin",
+            "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "Wpsec\\twofa\\": "src/"
+                }
+            },
+            "autoload-dev": {
+                "psr-4": {
+                    "Wpsec\\twofa\\Tests\\": "tests/"
+                }
+            },
+            "scripts": {
+                "phpunit": [
+                    "vendor/bin/phpunit --configuration tests/phpunit/phpunit.xml"
+                ],
+                "test-coverage-github": [
+                    "vendor/bin/phpunit --configuration tests/phpunit/phpunit.xml --coverage-text"
+                ],
+                "test-coverage-html": [
+                    "XDEBUG_MODE=coverage vendor/bin/phpunit --configuration tests/phpunit/phpunit.xml --coverage-html=html-coverage"
+                ],
+                "phpcs": [
+                    "./vendor/bin/phpcs --standard=phpcs.ruleset.xml src/"
+                ],
+                "phpcs-test": [
+                    "./vendor/bin/phpcs --standard=phpcs.ruleset.xml tests/"
+                ],
+                "phpcbf": [
+                    "./vendor/bin/phpcbf --standard=phpcs.ruleset.xml src/"
+                ],
+                "phpcbf-test": [
+                    "./vendor/bin/phpcbf --standard=phpcs.ruleset.xml tests/"
+                ]
+            },
+            "description": "WPSEC - WordPress 2FA Plugin (Plugin that secure login with 2FA)",
+            "support": {
+                "source": "https://github.com/gdcorp-wordpress/wpsec-wp-2fa-plugin/tree/v1.0.1",
+                "issues": "https://github.com/gdcorp-wordpress/wpsec-wp-2fa-plugin/issues"
+            },
+            "install-path": "../wpsec/wp-2fa-plugin"
+        },
+        {
+            "name": "wpsec/wp-captcha-plugin",
+            "version": "v1.0.2",
+            "version_normalized": "1.0.2.0",
+            "source": {
+                "type": "git",
+                "url": "git@github.com:gdcorp-wordpress/wpsec-wp-captcha-plugin.git",
+                "reference": "531c5a2e5af41774d45a5cd6ba9004fdc34c9975"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/gdcorp-wordpress/wpsec-wp-captcha-plugin/zipball/531c5a2e5af41774d45a5cd6ba9004fdc34c9975",
+                "reference": "531c5a2e5af41774d45a5cd6ba9004fdc34c9975",
+                "shasum": ""
+            },
+            "require": {
+                "ext-gd": "*"
+            },
+            "require-dev": {
+                "10up/wp_mock": "0.4.2",
+                "dealerdirect/phpcodesniffer-composer-installer": "^0.7.1",
+                "phpunit/phpunit": "^9.5",
+                "squizlabs/php_codesniffer": "3.*",
+                "wp-coding-standards/wpcs": "^2.3.0",
+                "wpsec/wp-mock-test-abstraction": "dev-main"
+            },
+            "time": "2022-12-09T15:09:14+00:00",
+            "type": "wordpress-plugin",
+            "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "Wpsec\\captcha\\": "src/"
+                }
+            },
+            "autoload-dev": {
+                "psr-4": {
+                    "Wpsec\\captcha\\Tests\\": "tests/"
+                }
+            },
+            "scripts": {
+                "phpunit": [
+                    "vendor/bin/phpunit --configuration tests/phpunit/phpunit.xml"
+                ],
+                "test-coverage-github": [
+                    "vendor/bin/phpunit --configuration tests/phpunit/phpunit.xml --coverage-text"
+                ],
+                "test-coverage-html": [
+                    "XDEBUG_MODE=coverage vendor/bin/phpunit --configuration tests/phpunit/phpunit.xml --coverage-html=html-coverage"
+                ],
+                "phpcs": [
+                    "./vendor/bin/phpcs --standard=phpcs.ruleset.xml src/"
+                ],
+                "phpcs-test": [
+                    "./vendor/bin/phpcs --standard=phpcs.ruleset.xml tests/"
+                ],
+                "phpcbf": [
+                    "./vendor/bin/phpcbf --standard=phpcs.ruleset.xml src/"
+                ],
+                "phpcbf-test": [
+                    "./vendor/bin/phpcbf --standard=phpcs.ruleset.xml tests/"
+                ]
+            },
+            "description": "WPSEC - WordPress Captcha Plugin (Bruteforce plugin that secure login with image captcha and IP check)",
+            "support": {
+                "source": "https://github.com/gdcorp-wordpress/wpsec-wp-captcha-plugin/tree/v1.0.2",
+                "issues": "https://github.com/gdcorp-wordpress/wpsec-wp-captcha-plugin/issues"
+            },
+            "install-path": "../wpsec/wp-captcha-plugin"
+        },
+        {
+            "name": "wptool/wp-admin-dash",
+            "version": "v1.0.3",
+            "version_normalized": "1.0.3.0",
+            "source": {
+                "type": "git",
+                "url": "git@github.com:gdcorp-wordpress/wptool-wp-admin-dash.git",
+                "reference": "e14919ad1ae0b8ec6d969d155b2c70168f368fd4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/gdcorp-wordpress/wptool-wp-admin-dash/zipball/e14919ad1ae0b8ec6d969d155b2c70168f368fd4",
+                "reference": "e14919ad1ae0b8ec6d969d155b2c70168f368fd4",
+                "shasum": ""
+            },
+            "require": {
+                "ext-gd": "*"
+            },
+            "require-dev": {
+                "10up/wp_mock": "0.4.2",
+                "dealerdirect/phpcodesniffer-composer-installer": "^0.7.1",
+                "phpunit/phpunit": "^9.5",
+                "squizlabs/php_codesniffer": "3.*",
+                "wp-coding-standards/wpcs": "^2.3.0",
+                "wpsec/wp-mock-test-abstraction": "dev-main"
+            },
+            "time": "2022-12-05T21:13:16+00:00",
+            "type": "wordpress-plugin",
+            "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "Wptool\\": "src/"
+                }
+            },
+            "autoload-dev": {
+                "psr-4": {
+                    "Wptool\\Tests\\": "tests/"
+                }
+            },
+            "scripts": {
+                "phpunit": [
+                    "vendor/bin/phpunit --configuration tests/phpunit/phpunit.xml"
+                ],
+                "test-coverage-github": [
+                    "vendor/bin/phpunit --configuration tests/phpunit/phpunit.xml --coverage-text"
+                ],
+                "test-coverage-html": [
+                    "XDEBUG_MODE=coverage vendor/bin/phpunit --configuration tests/phpunit/phpunit.xml --coverage-html=html-coverage"
+                ],
+                "phpcs": [
+                    "./vendor/bin/phpcs --standard=phpcs.ruleset.xml src/"
+                ],
+                "phpcs-test": [
+                    "./vendor/bin/phpcs --standard=phpcs.ruleset.xml tests/"
+                ],
+                "phpcbf": [
+                    "./vendor/bin/phpcbf --standard=phpcs.ruleset.xml src/"
+                ],
+                "phpcbf-test": [
+                    "./vendor/bin/phpcbf --standard=phpcs.ruleset.xml tests/"
+                ]
+            },
+            "description": "WPTOOL - WordPress Admin Dashboard Plugin",
+            "support": {
+                "source": "https://github.com/gdcorp-wordpress/wptool-wp-admin-dash/tree/v1.0.3",
+                "issues": "https://github.com/gdcorp-wordpress/wptool-wp-admin-dash/issues"
+            },
+            "install-path": "../wptool/wp-admin-dash"
+        }
+    ],
+    "dev": false,
+    "dev-package-names": []
+}

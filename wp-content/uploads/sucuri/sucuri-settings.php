@@ -1,0 +1,2 @@
+<?php exit(0); ?>
+{"sucuriscan_selfhosting_monitor":"disabled","sucuriscan_selfhosting_fpath":"","sucuriscan_api_service":"enabled","sucuriscan_notify_to":"seba@integratenyc.org","sucuriscan_notify_plugin_activated":"disabled","sucuriscan_addr_header":"HTTP_X_SUCURI_CLIENTIP","sucuriscan_lastlogin_redirection":"enabled","sucuriscan_revproxy":"disabled","sucuriscan_notify_plugin_change":"disabled","sucuriscan_api_key":"04c3f68e6c13b6cd06676e59c1ede211","sucuriscan_ignored_events":"","sucuriscan_notify_post_publication":"disabled"}
