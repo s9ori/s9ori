@@ -34,7 +34,6 @@ if ( is_front_page() || is_home() || is_front_page() && is_home() ) { echo ''; }
 <img class="logo" src="https://lowfemme.com/wp-content/uploads/2023/02/tumblr_neqyicWGSs1u1nuzeo1_500.gif" alt="Pet Image"></a>
 </div>
 <nav id="menu" role="navigation" itemscope itemtype="https://schema.org/SiteNavigationElement">
-<?php wp_nav_menu( array( 'theme_location' => 'main-menu', 'link_before' => '<span itemprop="name">', 'link_after' => '</span>' ) ); ?>
 <div id="search"><?php get_search_form(); ?></div>
 </nav>
 </header>
