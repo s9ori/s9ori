@@ -12,7 +12,6 @@ global $content_width;
 if ( !isset( $content_width ) ) { $content_width = 1920; }
 register_nav_menus( array( 'main-menu' => esc_html__( 'Main Menu', 'blankslate' ) ) );
 }
-include 'latest-post-block.php';
 add_action( 'admin_notices', 'blankslate_notice' );
 function blankslate_notice() {
 $user_id = get_current_user_id();
@@ -30,24 +29,20 @@ add_user_meta( $user_id, 'blankslate_notice_dismissed_8', 'true', true );
 add_action( 'wp_enqueue_scripts', 'blankslate_enqueue' );
 function blankslate_enqueue() {
 wp_enqueue_style( 'blankslate-style', get_stylesheet_uri() );
+wp_enqueue_style( 'landing-style', get_stylesheet_directory_uri() . '/landing.css' );
+wp_enqueue_style( 'spinner-style', get_stylesheet_directory_uri() . '/loading-spinner.css' );
+wp_enqueue_script( 'loading', get_template_directory_uri() . '/loading.js', array('jquery'), '1.0.0', true );
 wp_enqueue_script( 'jquery' );
 wp_enqueue_script( 'balling', get_template_directory_uri() . '/balling.js', array('jquery'), '1.0.0', true );
+wp_enqueue_script( 'schools', get_template_directory_uri() . '/school.js', array('jquery'), '1.0.0', true );
+//wp_enqueue_script( 'menu-images', get_template_directory_uri() . '/menu-hover.js', array('jquery'), '1.0.0', true );
 wp_enqueue_script( 'dark-mode', get_template_directory_uri() . '/dark-mode.js', array('jquery'), '1.0.0', true );
 wp_enqueue_script( 'wedge', get_template_directory_uri() . '/wedge.js', array('jquery'), '1.0.0', true );
 }
 add_action( 'wp_footer', 'blankslate_footer' );
 function blankslate_footer() {
 ?>
-<script>
-  (function(d) {
-    var config = {
-      kitId: 'ecq4oph',
-      scriptTimeout: 3000,
-      async: true
-    },
-    h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
-  })(document);
-</script>
+
 <script>
 jQuery(document).ready(function($) {
 var deviceAgent = navigator.userAgent.toLowerCase();
@@ -76,6 +71,7 @@ $("html").addClass("opera");
 }
 });
 </script>
+
 <?php
 }
 add_filter( 'document_title_separator', 'blankslate_document_title_separator' );

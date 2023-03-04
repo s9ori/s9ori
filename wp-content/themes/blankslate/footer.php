@@ -1,5 +1,12 @@
-<footer class="entry-footer">
-<span class="cat-links"><?php esc_html_e( 'Categories: ', 'blankslate' ); ?><?php the_category( ', ' ); ?></span>
-<span class="tag-links"><?php the_tags(); ?></span>
-<?php if ( comments_open() ) { echo '<span class="meta-sep">|</span> <span class="comments-link"><a href="' . esc_url( get_comments_link() ) . '">' . sprintf( esc_html__( 'Comments', 'blankslate' ) ) . '</a></span>'; } ?>
+</main>
+<?php get_sidebar(); ?>
+</div>
+<footer id="footer" role="contentinfo">
+<div id="copyright">
+&copy; <?php echo esc_html( date_i18n( __( 'Y', 'blankslate' ) ) ); ?> <?php echo esc_html( get_bloginfo( 'name' ) ); ?>
+</div>
 </footer>
+</div>
+<?php wp_footer(); ?>
+</body>
+</html>

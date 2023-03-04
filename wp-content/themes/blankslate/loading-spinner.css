@@ -1,0 +1,142 @@
+.spinner-container {
+    animation: spin infinite 2s linear;
+      transform-origin: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  }
+  
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .spinner-container {
+    padding: 10px;
+    text-align: center;
+    width: 100px;
+    height: 100px
+  }
+  
+    .spinner {
+    border-radius: 50%;
+    display: inline-block;
+    opacity: 70%;
+    height: 100px;
+    margin-right: 2px;
+    width: 29px;
+  }
+  
+  #spinner01 {
+    background: #FC8B00;
+    position:absolute;
+    animation: fadeIn 2s 0.5s ease-in both, rotate1 3s 0.5s both;
+  }
+  
+  #spinner02 {
+    background: #FF00B6;
+    position:absolute;
+    animation: fadeIn 2s 0.5s ease-in both, rotate2 3s 0.5s both;
+  }
+  
+  #spinner03 {
+    background: #00E5FF;
+    position:absolute;
+    animation: fadeIn 2s 0.5s ease-in both, rotate3 3s 0.5s both;
+  }
+  
+  #spinner04 {
+    background: #FFEF00;
+    position:absolute;
+    animation: fadeIn 2s 0.5s ease-in both, rotate4 3s 0.5s both;
+  }
+  
+  #spinner05 {
+    background: #0BD10B;
+    position:absolute;
+    animation: fadeIn 2s 0.5s ease-in both, rotate5 3s 0.5s both;
+  }
+  
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    
+    25% {
+      opacity: 0.7;
+    }
+  }
+  
+  @keyframes rotate1 {
+    0% {
+      transform: rotate(720deg);
+    }
+    
+    50% {
+      transform: rotate(0deg);
+    }
+    
+    100% {
+      transform: rotate(0deg);
+    }
+  }
+  
+  @keyframes rotate2 {
+    0% {
+      transform: rotate(720deg);
+    }
+    
+    50% {
+      transform: rotate(-38deg);
+    }
+    
+    100% {
+      transform: rotate(-38deg);
+    }
+  }
+  
+  @keyframes rotate3 {
+    0% {
+      transform: rotate(720deg);
+    }
+    
+    50% {
+      transform: rotate(-68deg);
+    }
+    
+    100% {
+      transform: rotate(-68deg);
+    }
+  }
+  
+  @keyframes rotate4 {
+    0% {
+      transform: rotate(720deg);
+    }
+    
+    50% {
+      transform: rotate(38deg);
+    }
+    
+    100% {
+      transform: rotate(38deg);
+    }
+  }
+  
+  @keyframes rotate5 {
+    0% {
+      transform: rotate(720deg);
+    }
+    
+    50% {
+      transform: rotate(68deg);
+    }
+    
+    100% {
+      transform: rotate(68deg);
+    }
+  }
