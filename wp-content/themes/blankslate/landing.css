@@ -1,0 +1,278 @@
+.landing-container, .landing-text, .landing-video, .landing-frame, .landing, .texted, .quick-menu, .quick, .real-integration, .programs, .resources {
+    transition: opacity .5s ease-in-out;
+    opacity:0;
+}
+  
+
+  .quick-menu {
+    display: flex;
+    flex-direction: column;
+    row-gap: 12px;
+    position: relative;
+    z-index: 9999999;
+    align-items: flex-start;
+}
+
+.texted {
+    row-gap: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.quick {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    white-space: nowrap;
+    text-align: right;
+    font-size: 20px;
+    text-decoration: none;
+    flex-wrap: nowrap;
+    width: min-content;
+    column-gap: 5px;
+}
+
+.quick a {
+    color: #FF0D72 !important;
+    font-family: 'Yantramanav', sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    text-decoration: none;
+    text-align: right;
+    text-transform: uppercase;
+    z-index: 9999999;
+}
+
+.quick-menu .quick:first-child a {
+    font-size: 35px;
+}
+
+.quick a#listed {
+    font-size: 20px;
+    color: white !important;
+}
+
+.landing-container {
+    padding-bottom: 50px;
+    padding-top: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+}
+
+h1.landing-text {
+    font-family: 'Yantramanav', sans-serif;
+    font-weight: 700;
+    font-size: 3.5em;
+    line-height: 120%;
+    letter-spacing: -0.022em;
+    text-transform: uppercase;
+    background: linear-gradient(180deg, #FF007A 0%, #F3AF00 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    flex: 1;
+    margin: 0;
+    z-index: 9999999;
+}
+
+.landing {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 50px;
+}
+
+.landing-frame {
+    width: 600px;
+    height: 600px;
+    min-width: 600px;
+    min-height: 600px;
+    background: #D9D9D9;
+    border-radius: 50%;
+    flex: 1;
+    margin-top: 50px;
+    overflow: hidden;
+    z-index: 999;
+    animation: grow-and-shrink 4000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+.landing-frame {
+    border: double 3px transparent;
+    border-radius: 50%;
+    background-image: linear-gradient(#ffffff00, #ffffff00), linear-gradient(180deg, #FF007A 0%, #F3AF00 100%);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    display: inline-block;
+  }
+  
+
+.landing-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 999;
+    animation: grow-and-shrink 4000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+
+/* Small screen (less than 480px wide) */
+@media screen and (max-width: 550px) {
+    .landing {
+        flex-direction: column !important;
+        justify-content: flex-start !important;
+        align-items: center !important;
+        gap: 20px !important;
+    }
+    .landing-container {
+        width: 100% !important;
+    }
+    .landing-frame {
+        width: 300px !important;
+        height: 300px !important;
+        max-width: 300px !important;
+        max-height: 300px !important;
+        min-width: 300px !important;
+        min-height: 300px !important;
+    }
+    .landing-video {
+        width: 300px !important;
+        height: 300px !important;
+        max-width: 300px !important;
+        max-height: 300px !important;
+        min-width: 300px !important;
+        min-height: 300px !important;
+    }
+    h1.landing-text {
+        font-size: 2.25em !important;
+    }
+    .cursor__ball {
+        display: none !important;
+    }
+    .quick a:first-child {
+        display: none !important;
+    }
+    .quick-menu {
+        flex-direction: row !important;
+        column-gap: 20px !important;
+        justify-content: center !important;
+
+    }
+}
+
+/* Medium screen (between 480px and 768px wide) */
+@media screen and (min-width: 551px) and (max-width: 779px) {
+    .landing-frame {
+        width: 350px !important;
+        height: 350px !important;
+        max-width: 350px !important;
+        max-height: 350px !important;
+        min-width: 350px !important;
+        min-height: 350px !important;
+    }
+    .landing-video {
+        width: 350px !important;
+        height: 350px !important;
+        max-width: 350px !important;
+        max-height: 350px !important;
+        min-width: 350px !important;
+        min-height: 350px !important;
+    }
+    h1.landing-text {
+        font-size: 2.85em !important;
+    }
+}
+
+@media screen and (min-width: 780px) and (max-width: 1200px) {
+    .landing-frame {
+        width: 400px !important;
+        height: 400px !important;
+        max-width: 400px !important;
+        max-height: 400px !important;
+        min-width: 400px !important;
+        min-height: 400px !important;
+    }
+    .landing-video {
+        width: 400px !important;
+        height: 400px !important;
+        max-width: 400px !important;
+        max-height: 400px !important;
+        min-width: 400px !important;
+        min-height: 400px !important;
+    }
+    h1.landing-text {
+        font-size: 3em !important;
+    }
+}
+
+/* Large screen (more than 768px wide) */
+@media screen and (min-width: 1201px) and (max-width: 1500px) {
+    .landing-frame {
+        width: 550px !important;
+        height: 550px !important;
+        max-width: 550px !important;
+        max-height: 550px !important;
+        min-width: 550px !important;
+        min-height: 550px !important;
+    }
+    .landing-video {
+        width: 550px !important;
+        height: 550px !important;
+        max-width: 550px !important;
+        max-height: 550px !important;
+        min-width: 550px !important;
+        min-height: 550px !important;
+    }
+    h1.landing-text {
+        font-size: 4em !important;
+    }
+}
+
+/* Large screen (more than 768px wide) */
+@media screen and (min-width: 1501px) {
+    .landing-frame {
+        width: 700px !important;
+        height: 700px !important;
+        max-width: 700px !important;
+        max-height: 700px !important;
+        min-width: 700px !important;
+        min-height: 700px !important;
+    }
+    .landing-video {
+        width: 700px !important;
+        height: 700px !important;
+        max-width: 700px !important;
+        max-height: 700px !important;
+        min-width: 700px !important;
+        min-height: 700px !important;
+    }
+    h1.landing-text {
+        font-size: 4.5em !important;
+    }
+}
+
+.wedge {
+    position: absolute;
+    border-radius: 100%;
+    opacity: 0;
+    z-index: 0;
+    transition: all 1.5s ease-in-out;
+  }
+
+  .wedge-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }

@@ -40,3 +40,17 @@ if ( is_front_page() || is_home() || is_front_page() && is_home() ) { echo ''; }
 <div id="wrapper" class="hfeed">
 <div id="container">
 <main id="content" role="main">
+<div class="cursor">
+<div class="cursor__ball cursor__ball--big ">
+  <div class="shape--big"></div>
+</div>
+
+  
+  <div class="cursor__ball cursor__ball--small">
+  <div class="shape--small"></div>
+  </div>
+</div>
+
+<button id="theme-toggle" background-color="white">
+<img class="colored" stroke="white" width="20" height="20" src="wp-content/themes/go/dist/images/moon.svg" alt="Icon">
+</button>
