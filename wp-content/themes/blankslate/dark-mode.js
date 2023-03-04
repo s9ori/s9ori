@@ -1,5 +1,7 @@
 // Check if a theme preference is already stored in localStorage
 const currentTheme = localStorage.getItem('theme');
+const form = document.querySelector('.openai');
+const texts = document.querySelector('.texted');
 if (currentTheme === 'dark') {
   document.body.classList.add('dark');
   texts.classList.remove('dark');
