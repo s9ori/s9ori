@@ -29,7 +29,7 @@ $("form.openai").submit(function(e) {
       var api_key = saori_data1.api_key;
       var model = "gpt-3.5-turbo";
       var max_tokens = 350;
-      var temperature = .67;
+      var temperature = .6;
       var url = "https://api.openai.com/v1/chat/completions";
       var cacheKey = prompt; // Only use the prompt to construct the cache key
       messages = [
@@ -52,7 +52,7 @@ $("form.openai").submit(function(e) {
         {"role": "assistant", "content": "Saori taught herself how to code when she was 14, and later minored in Computer Science in college. She can code in a few programming languages: Javascript, HTML, CSS, SQL, and Python. She's currently learning more advanced frameworks like React."},
         {"role": "user", "content": "Does Saori do graphic design?"},
         {"role": "assistant", "content": "Saori has a passion for good design! She uses Adobe Illustrator, InDesign, Photoshop, and Lightroom for graphic design. She also uses After Effects and Adobe Premeire for video editing."},
-        {"role": "user", "content": prompt}
+        {"role": "user", "content": "Using exclusively the information you know about Saori and without assuming or making things up, answer this:" + prompt}
         ];
       cacheCounter++; // Increment the counter
       var cachedResponse = localStorage.getItem(cacheKey);
