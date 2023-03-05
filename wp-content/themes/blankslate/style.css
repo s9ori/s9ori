@@ -200,6 +200,56 @@ input[type="submit"] {
     top: -500px;
 }
 
+.work-projects {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+    z-index: 99;
+}
+
+.work-container {
+    display: flex;
+    flex-direction: column;
+    background: #000000d1 !important;
+    flex: 1;
+    color: white;
+    font-family: 'Yantramanav';
+    font-size: 25px;
+    font-weight: 100;
+    padding: 30px;
+    border-radius: 25px;
+}
+
+.work {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.projects-container {
+    display: flex;
+    flex-direction: column;
+    background: #000000d1 !important;
+    flex: 1;
+    color: white;
+    font-family: 'Yantramanav';
+    font-size: 25px;
+    font-weight: 100;
+    padding: 30px;
+    border-radius: 25px;
+}
+
+.projecs {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
 .containera form {
     opacity: 0;
     z-index: 10;

@@ -38,3 +38,27 @@ get_header();
 </div>
 </article>
 <?php get_footer(); ?>
+
+<div class="landing-container">
+  <div class="landing">
+    <div class="texted">
+      <h1 class="landing-text">Hi! I'm Saori Uchida 内田沙織, a data analyst and web developer based in New York City.</h1>
+    </div>
+    <div class="work-projects">
+      <div class="work-container">
+        <h2 class="wp-caption">Work</h2>
+        <div class="work">
+          <img src="https://s9ori.com/wp-content/uploads/2023/03/EQUINOX-fb-logo.jpeg">
+          <img src="https://s9ori.com/wp-content/uploads/2023/03/EQUINOX-fb-logo.jpeg">
+        </div>
+      </div>
+      <div class="projects-container">
+        <h2 class="wp-caption">Projects</h2>
+      </div>
+    </div>
+    <div>[openai_api_request_form]</div>
+  </div>
+</div>
+<div class="openai-response-container">
+  <div class="openai-response"></div>
+</div>
