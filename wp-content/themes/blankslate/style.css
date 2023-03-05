@@ -200,6 +200,12 @@ input[type="submit"] {
     top: -500px;
 }
 
+.wp-caption {
+    margin: 0;
+    font-size: 1em;
+    font-weight: 100;
+}
+
 .work-projects {
     width: 100%;
     display: flex;
@@ -212,27 +218,28 @@ input[type="submit"] {
     display: flex;
     flex-direction: column;
     background: #000000d1 !important;
-    flex: 1;
+    flex: 0.3;
     z-index: 99;
     color: white;
     font-family: 'Yantramanav';
     font-size: 25px;
     font-weight: 100;
-    padding: 30px;
+    padding: 50px;
     border-radius: 25px;
+    gap: 25px;
+    align-items: center;
 }
 
 .work img {
-    width: 48%;
+    width: 100%;
     border-radius: 25px;
 }
 
 .work {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     gap: 10px;
     flex-wrap: wrap;
-    justify-content: space-between;
 }
 
 .projects-container {
