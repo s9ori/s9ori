@@ -22,12 +22,10 @@
      ob_start();
      ?>
      <form class="openai" action="#" method="post">
-         <textarea name="prompt" id="prompt" placeholder="topic or summary of segment"></textarea>
+         <textarea name="prompt" id="prompt" placeholder="ask me anything"></textarea>
 
 <div class="prompt-tuning">
-<textarea name="author" id="author" placeholder="guest name and @"></textarea>
-<label><input type="checkbox" id="summarizeArticle">Article?</label>
-<button id="past-tense-btn">Past</button>
+<button id="past-tense-btn">Send</button>
 <button id="present-tense-btn">Live</button>
 <button id="future-tense-btn">Upcoming</button>
 
