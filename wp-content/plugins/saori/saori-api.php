@@ -26,9 +26,6 @@
 
 <div class="prompt-tuning">
 <button id="past-tense-btn">Send</button>
-<button id="present-tense-btn">Live</button>
-<button id="future-tense-btn">Upcoming</button>
-
  </div>
      </form>
      <?php
