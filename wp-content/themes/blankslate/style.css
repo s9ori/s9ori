@@ -221,6 +221,11 @@ input[type="submit"] {
     border-radius: 25px;
 }
 
+.work img {
+    width: 48%;
+    border-radius: 25px;
+}
+
 .work {
     display: flex;
     flex-direction: row;
