@@ -417,10 +417,14 @@ textarea::-webkit-input-placeholder {
 }
 
 .openai {
-    position: absolute !important;
     transition: all 1s ease-in-out;
 }
 
+.block-container {
+    display:flex;
+    flex-direction: row;
+    gap: 50px;
+}
 .spinner-container {
 transition: all 1s ease-in-out;
 }
