@@ -14,8 +14,8 @@
          'api_key' => getenv('API_KEY')
      );
      wp_localize_script( 'saori-api-request1', 'saori_data1', $data );
-     $file_contents1 = file_get_contents(plugin_dir_url(__FILE__) . "/context.txt");
-     wp_localize_script( 'saori-api-request1', 'file_data2', array( 'file_contents2' => $file_contents1 ) );}
+     $file_contents2 = file_get_contents(plugin_dir_url(__FILE__) . "/context.txt");
+     wp_localize_script( 'saori-api-request1', 'file_data2', array( 'file_contents2' => $file_contents2 ) );}
  
 
  function saori_api_request_form() {
