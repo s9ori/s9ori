@@ -21,7 +21,7 @@
  function saori_api_request_form() {
      ob_start();
      ?>
-     <form class="saori" action="#" method="post">
+     <form class="openai" action="#" method="post">
          <textarea name="prompt" id="prompt" placeholder="topic or summary of segment"></textarea>
 
 <div class="prompt-tuning">
