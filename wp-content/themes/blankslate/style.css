@@ -17,16 +17,16 @@ BlankSlate is distributed under the terms of the GNU GPL
 */
 
 body {
-    background-color: #121212;
+    background: #121212;
     cursor: none;
-    transition: background-color 1s ease;
+    transition: background 1s ease;
     height: 100vh;
   }
   
   body.dark {
-    background-color: white;
+    background: linear-gradient(180deg, #d4acff 0%, #7ab8ff 100%);;
     cursor: none;
-    transition: background-color 1s ease;
+    transition: background 1s ease;
     height: 100vh
   }
 
