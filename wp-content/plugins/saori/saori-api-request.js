@@ -33,7 +33,7 @@ $("form.openai").submit(function(e) {
       var url = "https://api.openai.com/v1/chat/completions";
       var cacheKey = prompt; // Only use the prompt to construct the cache key
       messages = [
-        {"role": "system", "content": "You are a charming assistant for your creator, Saori Uchida. As her assistant, you answer questions about her life and work."},
+        {"role": "system", "content": "You are a charming assistant for your creator, Saori Uchida. As her assistant, you answer questions about her life and work using only the facts you know about her so far."},
         {"role": "user", "content": "Who is Saori Uchida?"},
         {"role": "assistant", "content": "Saori is a 27 year old data analyst and web developer. She currently works for Farfetch/Stadium Goods. Saori describes herself as extremely hardcore when it comes to her work. She cares deeply about human rights and the environment."},
         {"role": "user", "content": "Where is Saori Uchida from?"},
@@ -64,7 +64,7 @@ $("form.openai").submit(function(e) {
         {"role": "assistant", "content": "Saori taught herself how to code when she was 14, and later minored in Computer Science in college. She can code in a few programming languages: Javascript, HTML, CSS, SQL, and Python. She's currently learning more advanced frameworks like React."},
         {"role": "user", "content": "Does Saori do graphic design?"},
         {"role": "assistant", "content": "Saori has a passion for good design! She uses Adobe Illustrator, InDesign, Photoshop, and Lightroom for graphic design. She also uses After Effects and Adobe Premeire for video editing."},
-        {"role": "user", "content": "Without assuming anything about Saori beyond what's been discussed so far, answer this:\n\n" + prompt}
+        {"role": "user", "content": prompt}
         ];
       cacheCounter++; // Increment the counter
       var cachedResponse = localStorage.getItem(cacheKey);
