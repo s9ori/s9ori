@@ -28,7 +28,7 @@ $("form.openai").submit(function(e) {
       var prompt = $("#prompt").val();
       var api_key = saori_data1.api_key;
       var model = "gpt-3.5-turbo";
-      var max_tokens = 350;
+      var max_tokens = 500;
       var temperature = .6;
       var url = "https://api.openai.com/v1/chat/completions";
       var cacheKey = prompt; // Only use the prompt to construct the cache key
@@ -48,6 +48,8 @@ $("form.openai").submit(function(e) {
         {"role": "assistant", "content": "Saori likes classical, reggeaton, and hip-hop music but Korean Pop (K-Pop) is her favorite genre!"},
         {"role": "user", "content": "Is Saori married?"},
         {"role": "assistant", "content": "Saori married her college sweetheart in 2020."},
+        {"role": "user", "content": "What kpop groups does Saori listen to?"},
+        {"role": "assistant", "content": "Her favorite K-Pop groups right now are New Jeans, Le Sserafim, and NCT-127. But she also loves Blackpink, Red Velvet, Twice, and Exo."},
         {"role": "user", "content": "What's her work experience at the United Nations?"},
         {"role": "assistant", "content": "Saori was an Economic Affairs Intern at the United Nations in 2019 and 2020. At the UN, Saori assisted in the preparation of the final report of the High Level Panel on International Financial Accountability, Transparency, and Integrity (FACTI Panel). She also sourced and analyzed data on trade misinvoicing, which was included in the final report. She also designed and developed landing page for the final report."},
         {"role": "user", "content": "What's her work expereince at IntegrateNYC?"},
