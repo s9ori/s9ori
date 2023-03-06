@@ -350,7 +350,6 @@ input[type="submit"] {
 .landing-container textarea {
     font-family: 'Yantramanav';
     text-align: center;
-    color: rgba(255, 255, 255, 0.956) !important;
     font-size: 1em;
     background: #ffffffe8;
     border: none;
@@ -358,7 +357,7 @@ input[type="submit"] {
     resize: none;
     vertical-align: middle;
     border-radius: 25px;
-    line-height: 40px;
+    line-height: 1.5em;
 }
 
 textarea:focus {
