@@ -454,11 +454,11 @@ textarea.dark {
   
 
   .openai-response.light {
-    color: #000000;
+    color: #ffffff;
   }
   
   .openai-response.dark {
-    color: #ffffff;
+    color: #000000;
   }
 
   .openai-input.light {
