@@ -328,10 +328,8 @@ input[type="submit"] {
     opacity: 1;
     display: flex;
     font-family: Yantramanav;
-    color: white;
     font-weight: 300;
     line-height: 1.5em;
-    background: #000000;
     padding: 20px;
     z-index: 1;
     position: relative;
@@ -352,7 +350,7 @@ input[type="submit"] {
 .landing-container textarea {
     font-family: 'Yantramanav';
     text-align: center;
-    color: white !important;
+    color: rgba(255, 255, 255, 0.956) !important;
     font-size: 1em;
     background: #ffffffe8;
     border: none;
@@ -440,11 +438,11 @@ textarea::-webkit-input-placeholder {
 transition: all 1s ease-in-out;
 }
 
-.openai.light {
+textarea.light {
     background-color: #000000d1 !important;
   }
   
-  .openai.dark {
+textarea.dark {
     background-color: #ffffff8f !important;
   }
 

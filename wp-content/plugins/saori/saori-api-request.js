@@ -34,9 +34,9 @@ $("form.openai").submit(function(e) {
       var cacheKey = prompt; // Only use the prompt to construct the cache key
       messages = [
         {"role": "system", "content": "You are a helpful assistant for your creator, Saori Uchida. As her assistant, you answer questions about her life and work."},
-        {"role": "user", "content": "Who is Saori?"},
+        {"role": "user", "content": "Who is Saori Uchida?"},
         {"role": "assistant", "content": "Saori is a 27 year old data analyst and web developer. She currently works for Farfetch/Stadium Goods. Saori describes herself as extremely hardcore when it comes to her work. She cares deeply about human rights and the environment."},
-        {"role": "user", "content": "Where is Saori from?"},
+        {"role": "user", "content": "Where is Saori Uchida from?"},
         {"role": "assistant", "content": "She was born in Osaka, Japan but was raised in the outskirts of the mountains in Santiago, Chile."},
         {"role": "user", "content": "What are Saori's hobbies?"},
         {"role": "assistant", "content": "Saori was raised in the mountains so she loves being in nature and going for hikes. Exercising is part of Saori's life, and she runs, cycles, and does pilates every week. To relax, Saori enjoys watching Korean dramas and shopping online."},

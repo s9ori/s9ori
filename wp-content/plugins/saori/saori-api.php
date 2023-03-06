@@ -22,7 +22,7 @@
      ob_start();
      ?>
      <form class="openai" action="#" method="post">
-         <textarea name="prompt" id="prompt" placeholder="Using the Open AI engine, Saori programmed this virtual assistant to answer any questions you might have about her!"></textarea>
+         <textarea name="prompt" id="prompt" placeholder="Saori programmed this AI assistant to answer any questions about her!"></textarea>
 
 <div class="prompt-tuning">
 <button id="past-tense-btn">Send</button>
