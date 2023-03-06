@@ -177,7 +177,7 @@ input[type="submit"] {
         transform: scale(1);
     }
     50% {
-        transform: scale(1.010);
+        transform: scale(1.008);
     }
     100% {
         transform: scale(1);
@@ -230,7 +230,7 @@ input[type="submit"] {
     align-items: center;
 }
 
-.texted:hover {
+.texted {
     animation: grow-and-shrink 4000ms;
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
@@ -435,10 +435,6 @@ textarea::-webkit-input-placeholder {
 }
 .spinner-container {
 transition: all 1s ease-in-out;
-}
-
-.texted {
-    animation: none;
 }
 
 textarea.light {
