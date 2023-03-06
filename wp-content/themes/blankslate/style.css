@@ -324,14 +324,13 @@ input[type="submit"] {
     background-color: black;
 }
 
-.openai-response p {
-    color: white;
-    font-family: 'Yantramanav', sans-serif;
-    font-weight: 500;
-    font-size: 27px;
-}
-
 .openai-response {
+    opacity: 1;
+    display: flex;
+    font-family: Yantramanav;
+    color: white;
+    font-weight: 300;
+    line-height: 1.5em;
     background: #000000;
     padding: 20px;
     z-index: 1;
@@ -354,11 +353,14 @@ input[type="submit"] {
     font-family: 'Yantramanav';
     text-align: center;
     color: white !important;
-    font-size: 2em;
-    background: transparent;
+    font-size: 1em;
+    background: #ffffffe8;
     border: none;
     width: 100%;
-    resize: none
+    resize: none;
+    vertical-align: middle;
+    border-radius: 25px;
+    line-height: 40px;
 }
 
 textarea:focus {
