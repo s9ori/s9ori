@@ -365,19 +365,15 @@ textarea:focus {
   }
 
 textarea::-webkit-input-placeholder {
-    color: white;
+    color: black;
   }
   
   textarea:-moz-placeholder {
-    color: white;
-  }
-  
-  textarea::-moz-placeholder {
-    color: white;
+    color: black;
   }
   
   textarea:-ms-input-placeholder {
-    color: white;
+    color: black;
   }
 
 @media screen and (max-width: 600px) {
