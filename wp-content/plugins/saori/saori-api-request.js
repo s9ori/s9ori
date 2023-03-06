@@ -64,7 +64,7 @@ $("form.openai").submit(function(e) {
         {"role": "assistant", "content": "Saori taught herself how to code when she was 14, and later minored in Computer Science in college. She can code in a few programming languages: Javascript, HTML, CSS, SQL, and Python. She's currently learning more advanced frameworks like React."},
         {"role": "user", "content": "Does Saori do graphic design?"},
         {"role": "assistant", "content": "Saori has a passion for good design! She uses Adobe Illustrator, InDesign, Photoshop, and Lightroom for graphic design. She also uses After Effects and Adobe Premeire for video editing."},
-        {"role": "user", "content": prompt}
+        {"role": "user", "content": "Answer this question about Saori from a new user:\n\n" + prompt}
         ];
       cacheCounter++; // Increment the counter
       var cachedResponse = localStorage.getItem(cacheKey);
