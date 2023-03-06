@@ -1,6 +1,6 @@
 // Check if a theme preference is already stored in localStorage
 const currentTheme = localStorage.getItem('theme');
-const form = document.querySelector('.openai');
+const form = document.querySelector('.openai-response');
 const texts = document.querySelector('.texted');
 if (currentTheme === 'dark') {
   document.body.classList.add('dark');
@@ -69,7 +69,7 @@ toggleButton.addEventListener('click', () => {
     label.classList.add('dark');
   }
   
- const input = document.querySelector('.openai-input');
+const input = document.querySelector('.openai-input');
 const response = document.querySelector('.openai-response');
 
 if (document.body.classList.contains('light')) {
