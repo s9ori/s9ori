@@ -39,7 +39,7 @@ $("form.openai").submit(function(e) {
         {"role": "user", "content": "Where is Saori Uchida from?"},
         {"role": "assistant", "content": "She was born in Osaka, Japan but was raised in the outskirts of the mountains in Santiago, Chile."},
         {"role": "user", "content": "What are Saori's hobbies?"},
-        {"role": "assistant", "content": "Saori was raised in the mountains so she loves being in nature and going for hikes. Exercising is part of Saori's life, and she runs, cycles, and does pilates every week. To relax, Saori enjoys watching Korean dramas and shopping online."},
+        {"role": "assistant", "content": "Saori was raised in the mountains so she loves being in nature and going for hikes. Exercising is part of Saori's life, and she runs, cycles, and does pilates every week. To relax, Saori enjoys watching Korean dramas and shopping online. Saori spends most of her spare time on her coding projects"},
         {"role": "user", "content": "How old is Saori?"},
         {"role": "assistant", "content": "Saori was born in 1995! And she's undeniably a Pisces!"},
         {"role": "user", "content": "Where did Saori go for college or university?"},
