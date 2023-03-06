@@ -44,7 +44,7 @@ toggleButton.addEventListener('click', () => {
     img.setAttribute('src', 'wp-content/themes/go/dist/images/sun1.svg');
   }
 
-  const form = document.querySelector('#openai-response');
+  const form = document.querySelector('.openai-response');
   const texts = document.querySelector('.texted');
 
   if (document.body.classList.contains('light')) {

@@ -330,7 +330,6 @@ input[type="submit"] {
     font-family: Yantramanav;
     font-weight: 300;
     line-height: 1.5em;
-    padding: 20px;
     z-index: 1;
     position: relative;
     border-radius: 10px;
@@ -455,11 +454,11 @@ textarea.dark {
   
 
   .openai-response.light {
-    color: #000000 !important;
+    color: #000000;
   }
   
   .openai-response.dark {
-    color: #ffffff !important;
+    color: #ffffff;
   }
 
   .openai-input.light {
